@@ -35,7 +35,6 @@ void init()
     //install_mouse();
 
     timer_init();
-    srand(time(NULL));
 
 #ifdef USE_IRRKLANG
     sound = createIrrKlangDevice();

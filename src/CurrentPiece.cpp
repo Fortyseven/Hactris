@@ -13,6 +13,7 @@ CurrentPiece::CurrentPiece(Bucket *buck)
 /*************************************************/
 void CurrentPiece::reset()
 {
+    srand(time(NULL));
     this->setType( rand() % MAX_PIECES );
     //this->setType( 4 );
     xpos		= (BUCKET_W / 2) - (curpiece.width / 2);
