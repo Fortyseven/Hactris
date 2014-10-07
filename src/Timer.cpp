@@ -7,20 +7,20 @@ unsigned long timer;
 
 void timer_proc()
 {
-	timer++;
+    timer++;
 }
 END_OF_FUNCTION(ticker)
 
 void timer_init()
 {
-	timer = 0;
-	install_int_ex(timer_proc, BPS_TO_TIMER( TIMER_SPEED_TICKS_PER_SEC ));
+    timer = 0;
+    install_int_ex(timer_proc, BPS_TO_TIMER( TIMER_SPEED_TICKS_PER_SEC ));
 
-	LOCK_VARIABLE(my_time);
+    LOCK_VARIABLE(my_time);
     LOCK_FUNCTION(my_timer);
 }
 
 void timer_done()
 {
-	remove_int(timer_proc);
+    remove_int(timer_proc);
 }

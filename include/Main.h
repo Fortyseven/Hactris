@@ -33,4 +33,6 @@ typedef struct {
 extern BITMAP	 *buf;
 extern TTileType tiles[];
 
+extern void error(std::string message);
+
 #endif
