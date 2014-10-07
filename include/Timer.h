@@ -6,6 +6,11 @@ extern unsigned long timer;
 extern void timer_init();
 extern void timer_done();
 
+/**********************************************************************
+ * Timer uses Allegro to lock 60 ticks/sec
+ **********************************************************************/
+
+
 class Delay
 {
     private:

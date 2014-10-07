@@ -267,6 +267,8 @@ void CurrentPiece::update()
 {
     static unsigned int last_timer = timer;
 
+    // This delay seems to be so that we don't spin wildly out of control with
+    // every keypress.
     static Delay *keydel = new Delay(7);
 
     //if (ypos > BUCKET_Y) reset();        // Just in case, but probably not needed

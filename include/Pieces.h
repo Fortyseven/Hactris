@@ -1,6 +1,11 @@
 #ifndef __PIECES_H__
 #define __PIECES_H__
 
+/**********************************************************************
+ * Here is where the actual player pieces are defined.
+ **********************************************************************/
+
+
 #define PIECE_W	    4
 #define PIECE_H	    4
 #define MAX_PIECES	7

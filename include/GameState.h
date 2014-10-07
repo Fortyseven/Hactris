@@ -5,6 +5,12 @@
 #include <Bucket.h>
 #include <Pieces.h>
 #include <CurrentPiece.h>
+
+/**********************************************************************
+ * GameState contains the main game loop
+ **********************************************************************/
+
+
 class GameState
 {
     public:

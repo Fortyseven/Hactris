@@ -1,20 +1,19 @@
 #include "GameState.h"
 
-
-/*-----------------------*/
+/*************************************************/
 GameState::GameState()
 {
     bucket.reset();
     currentpiece = new CurrentPiece(&bucket);
 }
 
-/*-----------------------*/
+/*************************************************/
 void GameState::init()
 {
     this->bucketbg = create_bitmap(BUCKET_W * 16, BUCKET_H * 16);
 }
 
-/*-----------------------*/
+/*************************************************/
 void GameState::done()
 {
     if (bucketbg) {
@@ -22,7 +21,7 @@ void GameState::done()
     }
 }
 
-/*-----------------------*/
+/*************************************************/
 void GameState::draw_bucket()
 {
     int pvalue = 0;
@@ -41,7 +40,7 @@ void GameState::draw_bucket()
     }
 }
 
-/*-----------------------*/
+/*************************************************/
 void GameState::draw()
 {
     //clear_to_color(bucketbg, makecol(255,0,255));

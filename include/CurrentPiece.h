@@ -3,8 +3,13 @@
 
 #include "Main.h"
 
+/**********************************************************************
+ * CurrentPiece is the piece currently being controlled by the player.
+ **********************************************************************/
+
 class Bucket;
 
+/*************************************************/
 class CurrentPiece
 {
     private:

@@ -1,7 +1,12 @@
 #ifndef __BUCKET_H__
 #define __BUCKET_H__
 
-#define BUCKET_W	10
+/**********************************************************************
+ * "Bucket" represents the playing field where the pieces go to die.
+ **********************************************************************/
+
+
+#define BUCKET_W    10
 #define BUCKET_H	24
 
 #define BUCKET_X	(VID_WIDTH/2) - ((BUCKET_W * TILE_SIZE) / 2)
