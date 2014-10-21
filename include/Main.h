@@ -4,6 +4,7 @@
 
 #include <allegro.h>
 #include <string>
+#include <cstring>
 
 #ifdef USE_IRRKLANG
 #include <irrKlang.h>
