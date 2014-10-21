@@ -1,5 +1,5 @@
 #include <Pieces.h>
-#include <String>
+#include <string>
 
 
 Piece pieces[] = {

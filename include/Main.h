@@ -3,7 +3,7 @@
 
 
 #include <allegro.h>
-#include <String>
+#include <string>
 
 #ifdef USE_IRRKLANG
 #include <irrKlang.h>
@@ -12,7 +12,7 @@ using namespace irrklang;
 extern ISoundEngine *sound;
 #endif
 
-#include "timer.h"
+#include "Timer.h"
 
 #define VID_WIDTH	640
 #define VID_HEIGHT	480
@@ -21,9 +21,9 @@ extern ISoundEngine *sound;
 
 #define MAX_TILETYPE	8
 
-#include "pieces.h"
-#include "currentpiece.h"
-#include "bucket.h"
+#include "Pieces.h"
+#include "CurrentPiece.h"
+#include "Bucket.h"
 
 typedef struct {
     BITMAP *image;
